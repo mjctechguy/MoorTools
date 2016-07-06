@@ -10,8 +10,6 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 public class ModRecipes {
 
     public static void init() {
-        GameRegistry.addShapelessRecipe(new ItemStack(ModItems.xp_ten),new ItemStack(Items.EXPERIENCE_BOTTLE),new ItemStack(Items.CARROT));
-        GameRegistry.addShapelessRecipe(new ItemStack(ModItems.xp_ten),new ItemStack(Items.EXPERIENCE_BOTTLE),new ItemStack(Items.BANNER));
     }
 
 }
