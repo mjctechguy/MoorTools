@@ -2,9 +2,6 @@ package com.mjctechguy.moortools.init;
 
 import com.mjctechguy.moortools.items.*;
 
-/**
- * Created by mjctechguy on 22/06/16.
- */
 public class ModItems {
     //Xp Stuff
     public static ItemMOSXp10 xp_ten;
@@ -20,7 +17,7 @@ public class ModItems {
         xp_ten = new ItemMOSXp10();
 
         //Red Diamond Pick Tools and Sword
-        redDiamond_Pick = new ItemMOSPickaxe("redDiamond_Pick",ModToolMaterials.RED_DIAMOND);
+        redDiamond_Pick = new ItemMOSPickaxe("redD1iamond_Pick",ModToolMaterials.RED_DIAMOND);
         redDiamond_Axe = new ItemMOSAxe("redDiamond_Axe", ModToolMaterials.RED_DIAMOND);
         redDiamond_Spade = new ItemMOSSpade("redDiamond_Spade",ModToolMaterials.RED_DIAMOND);
         redDiamond_Hoe = new ItemMOSHoe("redDiamond_Hoe",ModToolMaterials.RED_DIAMOND);
