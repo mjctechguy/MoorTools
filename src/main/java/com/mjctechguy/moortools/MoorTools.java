@@ -1,5 +1,6 @@
 package com.mjctechguy.moortools;
 
+import com.mjctechguy.moortools.init.ModBlocks;
 import com.mjctechguy.moortools.init.ModCreativeTab;
 import com.mjctechguy.moortools.init.ModItems;
 import com.mjctechguy.moortools.init.ModRecipes;
@@ -29,6 +30,7 @@ public class MoorTools {
     @EventHandler()
     public void preInit(FMLPreInitializationEvent event) {
         ModItems.init();
+        ModBlocks.init();
         ModRecipes.init();
     }
 
@@ -40,6 +42,7 @@ public class MoorTools {
     @EventHandler()
     public void init(FMLInitializationEvent event) {
         proxy.registerItemRenders();
+        proxy.registerBlockRenders();
     }
 
 }

@@ -1,7 +1,6 @@
 package com.mjctechguy.moortools.items;
 
 import com.mjctechguy.moortools.MoorTools;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemPickaxe;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 

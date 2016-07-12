@@ -11,10 +11,12 @@ public class ModItems {
     public static ItemMOSAxe redDiamond_Axe;
     public static ItemMOSSpade redDiamond_Spade;
     public static ItemMOSHoe redDiamond_Hoe;
+    public static ItemStuff stuff;
 
 
     public static void init() {
         xp_ten = new ItemMOSXp10();
+        stuff = new ItemStuff();
 
         //Red Diamond Pick Tools and Sword
         redDiamond_Pick = new ItemMOSPickaxe("redD1iamond_Pick",ModToolMaterials.RED_DIAMOND);
