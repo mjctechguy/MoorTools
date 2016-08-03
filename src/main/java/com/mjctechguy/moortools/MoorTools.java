@@ -29,20 +29,17 @@ public class MoorTools {
 
     @EventHandler()
     public void preInit(FMLPreInitializationEvent event) {
-        ModItems.init();
-        ModBlocks.init();
-        ModRecipes.init();
+        proxy.preInit(event);
     }
 
     @EventHandler()
     public void postInit(FMLPostInitializationEvent event) {
-
+        proxy.postInit(event);
     }
 
     @EventHandler()
     public void init(FMLInitializationEvent event) {
-        proxy.registerItemRenders();
-        proxy.registerBlockRenders();
+        proxy.init(event);
     }
 
 }

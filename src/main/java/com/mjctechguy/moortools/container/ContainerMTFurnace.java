@@ -42,7 +42,7 @@ public class ContainerMTFurnace extends Container {
     private final int FIRST_OUTPUT_SLOT_NUMBER = FIRST_INPUT_SLOT_NUMBER + INPUT_SLOTS_COUNT;
 
     public ContainerMTFurnace(InventoryPlayer inventoryPlayer, TileEntityMTFurnace tileEntityMTFurnace) {
-        this.tileEntityMTFurnace = tileEntityMTFurnace;
+        /*this.tileEntityMTFurnace = tileEntityMTFurnace;
 
         final int SLOT_X_SPACING = 18;
         final int SLOT_Y_SPACING = 18;
@@ -91,7 +91,7 @@ public class ContainerMTFurnace extends Container {
         for (int y = 0; y < OUTPUT_SLOTS_COUNT; y++) {
             int slotNumber = y + FIRST_OUTPUT_SLOT_NUMBER;
             addSlotToContainer(new SlotFurnaceOutput(inventoryPlayer.player,inventoryPlayer, slotNumber, OUTPUT_SLOTS_XPOS, OUTPUT_SLOTS_YPOS + SLOT_Y_SPACING * y));
-        }
+        }*/
 
     }
 
@@ -100,16 +100,17 @@ public class ContainerMTFurnace extends Container {
         return true;
     }
 
-    @Nullable
+    /*@Nullable
     @Override
     public ItemStack transferStackInSlot(EntityPlayer playerIn, int index) {
-        Slot sourceSlot = (Slot)inventorySlots.get(index);
+        Slot sourceSlot = (Slot) inventorySlots.get(index);
         if (sourceSlot == null || !sourceSlot.getHasStack()) return null;
         ItemStack sourceStack = sourceSlot.getStack();
         ItemStack copyofSourceStack = sourceStack.copy();
 
         if (index >= VANILLA_FIRST_SLOT_INDEX && index < VANILLA_FIRST_SLOT_INDEX + VANILLA_SLOT_COUNT) {
-            if TileEntityMTFurnace,get
+            //if TileEntityMTFurnace,getgh
         }
-    }
+
+    }*/
 }
