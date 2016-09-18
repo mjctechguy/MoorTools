@@ -19,7 +19,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
 public class MoorTools {
 
-    @Instance(Reference.MOD_NAME)
+    @Instance("moortools")
     public static MoorTools instance;
 
     @SidedProxy(clientSide = Reference.MOD_CLIENT_PROXY_CLASS, serverSide = Reference.MOD_SERVER_PROXY_CLASS )
@@ -41,5 +41,4 @@ public class MoorTools {
     public void init(FMLInitializationEvent event) {
         proxy.init(event);
     }
-
 }

@@ -41,7 +41,7 @@ public class ClientProxy extends CommonProxy{
 
     @Override
     public void registerBlockRenders() {
-        registerBlockRender(ModBlocks.mt_furnace);
+        registerBlockRender(ModBlocks.mt_chest);
         registerBlockRender(ModBlocks.block_base);
     }
 
