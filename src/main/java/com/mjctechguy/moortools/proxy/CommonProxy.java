@@ -2,7 +2,9 @@ package com.mjctechguy.moortools.proxy;
 
 import com.mjctechguy.moortools.MoorTools;
 import net.minecraft.block.Block;
+import net.minecraft.client.Minecraft;
 import net.minecraft.item.Item;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
@@ -22,6 +24,7 @@ public class CommonProxy {
 
     public void init(FMLInitializationEvent e) {
         NetworkRegistry.INSTANCE.registerGuiHandler(MoorTools.instance, new GuiProxy());
+        //MinecraftForge.EVENT_BUS.register(new MoorTools);
     }
 
     public void postInit(FMLPostInitializationEvent e) {}

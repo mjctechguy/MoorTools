@@ -5,6 +5,7 @@ import com.mjctechguy.moortools.init.ModItems;
 import com.mjctechguy.moortools.init.ModRecipes;
 import com.mjctechguy.moortools.reference.Reference;
 
+import com.sun.org.apache.xpath.internal.operations.Mod;
 import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.RenderItem;
@@ -28,8 +29,17 @@ public class ClientProxy extends CommonProxy{
 
     @Override
     public void registerItemRenders() {
-        registerItemRender(ModItems.redDiamond_Axe);
-        registerItemRender(ModItems.xp_ten);
+        registerItemRender(ModItems.wood_Paxel);
+        registerItemRender(ModItems.stone_Paxel);
+        registerItemRender(ModItems.iron_Paxel);
+        registerItemRender(ModItems.diamond_Paxel);
+        registerItemRender(ModItems.gold_Paxel);
+
+        registerItemRender(ModItems.wood_Shears);
+        registerItemRender(ModItems.stone_Shears);
+        registerItemRender(ModItems.gold_Shears);
+        registerItemRender(ModItems.diamond_Shears);
+        registerItemRender(ModItems.emerald_Shears);
     }
 
     @Override
@@ -50,7 +60,6 @@ public class ClientProxy extends CommonProxy{
         super.preInit(e);
         ModItems.init();
         ModBlocks.init();
-        ModRecipes.init();
     }
 
     @Override
@@ -61,6 +70,7 @@ public class ClientProxy extends CommonProxy{
     @Override
     public void init(FMLInitializationEvent e) {
         super.init(e);
+        ModRecipes.init();
         registerBlockRenders();
         registerItemRenders();
     }

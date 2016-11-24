@@ -15,4 +15,7 @@ public class ModBlocks {
         mt_chest = new MTChest(Material.ROCK,"mt_chest");
         block_base = new BlockBase(Material.ROCK,"block_base");
     }
+
+
 }
+

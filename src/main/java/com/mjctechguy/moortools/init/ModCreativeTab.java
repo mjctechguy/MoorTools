@@ -19,6 +19,6 @@ public class ModCreativeTab extends CreativeTabs {
     @Override
     @SideOnly(Side.CLIENT)
     public Item getTabIconItem() {
-        return ModItems.xp_ten;
+        return ModItems.diamond_Paxel;
     }
 }

@@ -1,16 +1,15 @@
 package com.mjctechguy.moortools.items;
 
 import com.mjctechguy.moortools.MoorTools;
-import net.minecraft.item.Item.ToolMaterial;
-import net.minecraft.item.ItemHoe;
+import net.minecraft.item.ItemShears;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 /**
- * Created by mjctechguy on 25/06/16.
+ * Created by mjcte on 23/10/2016.
  */
-public class ItemMOSHoe extends ItemHoe {
-    public ItemMOSHoe(String name, ToolMaterial material) {
-        super(material);
+public class ItemMOSShears extends ItemShears {
+    public ItemMOSShears(String name, int durability) {
+        this.setMaxDamage(durability);
         this.setUnlocalizedName(name);
         this.setRegistryName(name);
         this.setCreativeTab(MoorTools.creativeTab);
